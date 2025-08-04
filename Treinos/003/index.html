@@ -23,9 +23,12 @@
         </div>
 
         <script>
-            var p1 = window.document.getElementsByTagName('p')[1]
+            var p1 = window.document.getElementsByClassName('cock')[1]
 
-            window.document.write(`Socrates disse: ${p1.innerHTML}`)
+            window.document.write(`Socrates disse: ${p1.innerText}`)
+
+            var d = document.querySelector('div#fuck')
+            d.style.background = 'blue'
         </script>
     </body>
 </html>
