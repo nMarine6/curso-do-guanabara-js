@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div#cock {
+                background-color: red;
+                color: white;
+                text-align: center;
+
+                border: 1px solid black;
+                border-radius: 5px;
+
+                margin: auto;
+                width: 200px;
+                height: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cock">
+            CLICA
+        </div>
+    </body>
+    <script>
+        var d = document.getElementById('cock')
+
+        d.addEventListener(`click`, clickar)
+        d.addEventListener(`mouseenter`, enter)
+        d.addEventListener(`mouseout`, out)
+        function clickar() {
+            d.innerText = 'Loading'
+        }
+
+        function enter() {
+            d.style.background = 'blue'
+        }
+
+        function out() {
+            d.style.background = 'red'
+            d.innerText = 'CLICA'
+        }
+    </script>
+</html>
