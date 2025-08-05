@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAPERS PLEASE</title>
+    </head>
+    <body>
+        <h1>
+            Passaporte, porfavor...
+        </h1>
+
+        <p>
+            Nome:
+        </p>
+        <p>
+            <input type="text" id="nome">
+        </p>
+
+        <p>
+            País:
+        </p>
+        <p>
+            <input type="text" name="pais" id="pais"> <input type="button" value="Entregar" onclick="pass()">
+        </p>
+        <div id="fala">
+
+        </div>
+    </body>
+    <script>
+        var txtpais = document.querySelector('input#pais')
+        var txtnome = document.querySelector('input#nome')
+        var fala = document.querySelector('div#fala')
+
+        function pass() {
+            var pais = txtpais.value.toUpperCase()
+            var nome = txtnome.value
+
+            if (pais == 'BRASIL'){
+                fala.innerHTML = `<p>Bem vindo de volta, ${nome}.</p>`
+            } else {
+                fala.innerHTML = `<p>Hmmmm... Deixa me ver o visto, ${nome}...</p>`
+            }
+        }
+    </script>
+</html>
