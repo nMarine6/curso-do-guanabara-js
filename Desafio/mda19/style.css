@@ -8,13 +8,19 @@
 /*FONTES*/
 
 /*TAGS*/
+img {
+    width: 500px;
 
+    margin: 30px;
+}
 /*BOXES*/
 body {
     background-color: #b7b7ff;
 }
 
 header {
+    color: white;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
 
     padding: 10px;
@@ -33,6 +39,8 @@ main {
 }
 
 footer {
+    color: white;
+    text-shadow: 1px 1px black;
     text-align: center;
 
     margin-top: 20px;
